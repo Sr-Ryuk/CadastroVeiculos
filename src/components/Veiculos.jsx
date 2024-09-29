@@ -1,5 +1,5 @@
 // src/Veiculos.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
   Container,
@@ -14,8 +14,7 @@ import {
 } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
-
-const API_URL = 'https://65123f1cb8c6ce52b395745b.mockapi.io/api/task';
+import API_URL from '../config';
 
 const Veiculos = () => {
   const [veiculos, setVeiculos] = useState([]);
